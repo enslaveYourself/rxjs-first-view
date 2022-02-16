@@ -1,4 +1,4 @@
-import {debounceTime, distinctUntilChanged, fromEvent, map, Observable, takeUntil} from "rxjs";
+import { debounceTime, distinctUntilChanged, fromEvent, map, Observable, takeUntil } from 'rxjs';
 
 /*const search$ = new Observable<Event>(observer => {
   const search = document.getElementById('search');
@@ -55,6 +55,6 @@ search$
     distinctUntilChanged(),
     takeUntil(stop$))
   .subscribe(value => {
-    console.log('Printing')
+    console.log('Printing');
     console.log(value);
   });
